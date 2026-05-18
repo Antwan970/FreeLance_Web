@@ -5,7 +5,9 @@ const dotenv = require('dotenv');
 const path = require('path');
 const { logMailConfigStatus } = require('./utils/mailer');
 
-dotenv.config({ path: path.join(__dirname, '.env') });
+if (!process.env.VERCEL) {
+  dotenv.config({ path: path.join(__dirname, '.env') });
+}
 logMailConfigStatus();
 
 const app = express();
