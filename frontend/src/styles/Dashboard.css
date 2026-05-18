@@ -1,0 +1,440 @@
+.dashboard-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dashboard-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.30), transparent 34%),
+    linear-gradient(135deg, #0f172a 0%, #1d4ed8 55%, #0f766e 100%);
+  color: white;
+  box-shadow: 0 24px 58px rgba(37, 99, 235, 0.20);
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-hero h1,
+.dashboard-hero p {
+  color: white;
+}
+
+.dashboard-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  margin: 0.4rem 0 0.8rem;
+  letter-spacing: -0.04em;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 900;
+  opacity: 0.78;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.dashboard-btn {
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.dashboard-btn.light {
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.dashboard-btn.dark {
+  background: white;
+  color: #1d4ed8;
+}
+
+.dashboard-btn:hover {
+  transform: translateY(-2px);
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-stat-card,
+.dashboard-panel,
+.mini-chart,
+.application-card,
+.employer-job-card,
+.candidate-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.07);
+}
+
+.dashboard-stat-card {
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-stat-card::after {
+  content: '';
+  position: absolute;
+  right: -28px;
+  top: -28px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.dashboard-stat-card span {
+  color: #64748b;
+  font-weight: 900;
+}
+
+.dashboard-stat-card strong {
+  display: block;
+  margin: 0.55rem 0;
+  color: #0f172a;
+  font-size: 2.25rem;
+}
+
+.dashboard-stat-card p {
+  margin: 0;
+  color: #64748b;
+}
+
+.dashboard-panel {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.visualization-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(240, 253, 250, 0.88));
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.panel-header h2 {
+  margin-top: 0.25rem;
+}
+
+.text-link {
+  font-weight: 900;
+  color: #1d4ed8;
+}
+
+.pill {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.4rem 0.78rem;
+  background: #eef2ff;
+  color: #3730a3 !important;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.employer-job-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.employer-job-card {
+  padding: 1.2rem;
+}
+
+.employer-job-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.employer-job-header h3 {
+  margin-bottom: 0.35rem;
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem;
+}
+
+.candidate-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: #ffffff;
+}
+
+.candidate-top,
+.application-card-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.candidate-top h4 {
+  margin-bottom: 0.25rem;
+}
+
+.candidate-message,
+.application-message {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 0.8rem;
+  color: #475569;
+}
+
+.candidate-meta,
+.application-footer {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.candidate-meta a {
+  font-weight: 900;
+}
+
+.decision-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.decision-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.55rem 0.85rem;
+  font-weight: 900;
+  transition: 0.25s ease;
+}
+
+.decision-btn:hover {
+  transform: translateY(-2px);
+}
+
+.decision-btn.process {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.decision-btn.accept {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.decision-btn.reject {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.application-grid,
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1rem;
+}
+
+.application-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.application-status {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.application-status.in-process {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.application-status.accepted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.application-status.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.mini-chart {
+  padding: 1.2rem;
+}
+
+.mini-chart h3 {
+  margin-bottom: 1rem;
+}
+
+.bar-row {
+  margin-bottom: 1rem;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.45rem;
+  color: #334155;
+  font-weight: 800;
+}
+
+.bar-track {
+  height: 13px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2563eb, #14b8a6);
+}
+
+.donut-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donut-chart {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0.5rem auto 1rem;
+}
+
+.donut-chart > div {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #e2e8f0;
+}
+
+.donut-chart strong,
+.donut-chart span {
+  display: block;
+}
+
+.donut-chart strong {
+  font-size: 1.8rem;
+  color: #0f172a;
+}
+
+.donut-chart span {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.donut-legend span {
+  color: #475569;
+  font-weight: 800;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.accepted-dot { background: #16a34a; }
+.rejected-dot { background: #dc2626; }
+.process-dot { background: #2563eb; }
+
+.empty-state,
+.dashboard-state,
+.dashboard-error {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 18px;
+  background: #f8fafc;
+  color: #475569;
+}
+
+.dashboard-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.muted {
+  color: #94a3b8 !important;
+}
+
+@media (max-width: 760px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .dashboard-hero,
+  .panel-header,
+  .employer-job-header,
+  .candidate-top,
+  .application-card-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-actions {
+    justify-content: flex-start;
+  }
+}
