@@ -1,0 +1,637 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Length 4511 >>
+stream
+BT
+/F2 22 Tf
+1 0 0 1 50.00 791.89 Tm
+(Updated Web Report) Tj
+/F2 15 Tf
+1 0 0 1 50.00 772.69 Tm
+(FreeLancena Freelance Hiring Platform) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 750.49 Tm
+(Updated on May 18, 2026. This report reflects the current source code, project) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 736.29 Tm
+(responsibilities, major features, backend routes, database models, email support, and) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 722.09 Tm
+(Vercel deployment configuration.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 693.89 Tm
+(Project Overview) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 674.69 Tm
+(FreeLancena is a MERN-style freelance hiring platform for job seekers, employers, and) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 660.49 Tm
+(admins. The frontend is built with React and Vite, and the backend is built with) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 646.29 Tm
+(Express, MongoDB, Mongoose, JWT authentication, bcrypt password hashing, and Nodemailer) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 632.09 Tm
+(email notifications.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 613.89 Tm
+(The current application includes a modern home page, authentication pages, profile) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 599.69 Tm
+(editing, job browsing, employer job creation, application submission, employer and job) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 585.49 Tm
+(seeker dashboards, application decision tracking, admin statistics, and Vercel) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 571.29 Tm
+(deployment configuration.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 547.09 Tm
+(Updated Main Features) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 527.89 Tm
+(- Home page now presents FreeLancena as a professional hiring platform with hero) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 513.69 Tm
+(content, dashboard preview imagery, trust strip, feature cards, and links based on) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 499.49 Tm
+(login state.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 481.29 Tm
+(- Authentication supports register, login, demo users, JWT sessions, localStorage) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 467.09 Tm
+(persistence, logout, and user context through AuthProvider.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 448.89 Tm
+(- Users can maintain a profile with name, bio, skills, experience, and CV or) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 434.69 Tm
+(portfolio link.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 416.49 Tm
+(- Job seekers can browse jobs, search/filter listings, apply with contact details, CV) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 402.29 Tm
+(filename or CV link, and a detailed message.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 384.09 Tm
+(- Employers can create jobs, view applicants, review submitted messages/CV links, and) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 369.89 Tm
+(mark applications as in process, accepted, or rejected.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 351.69 Tm
+(- Email notification support sends application decision emails when an employer) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 337.49 Tm
+(accepts or rejects an applicant. Console mode is supported for local/demo use.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 319.29 Tm
+(- Admin users can view platform statistics and registered user data through protected) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 305.09 Tm
+(admin routes.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 286.89 Tm
+(- Deployment is configured for Vercel with the Express API under /api and the built) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 272.69 Tm
+(frontend served as a static Vite app.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 248.49 Tm
+(Person 1: Authentication, Users, Profile) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 229.29 Tm
+(Owned frontend files: Login.jsx, Register.jsx, Profile.jsx, AuthContext.jsx,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 215.09 Tm
+(AuthContextObject.js, useAuth.js, Auth.css, and Profile.css.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 196.89 Tm
+(Owned backend files: backend/routes/auth.js, backend/routes/users.js,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 182.69 Tm
+(backend/middleware/auth.js, and backend/models/User.js.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 164.49 Tm
+(Login.jsx validates email and password, calls login\(\) from useAuth\(\), shows) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 150.29 Tm
+(loading/error states, and redirects successful users to the correct area. Admin users go) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 136.09 Tm
+(to the dashboard, while normal users go to jobs.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 117.89 Tm
+(Register.jsx collects name, email, password, confirm password, and account type. It) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 103.69 Tm
+(validates the form, calls register\(\) from AuthContext, stores the returned session, and) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 89.49 Tm
+(redirects to jobs.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 71.29 Tm
+(AuthContext.jsx is the main frontend session layer. It stores token and user in state) Tj
+ET
+endstream
+endobj
+4 0 obj
+<< /Length 4917 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 50.00 791.89 Tm
+(and localStorage, exposes login/register/logout/updateUser, supports demo accounts, and) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 777.69 Tm
+(calculates isAuthenticated from the token.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 759.49 Tm
+(Profile.jsx protects the page from unauthenticated users, loads profile data, and lets) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 745.29 Tm
+(the user update name, bio, skills, experience, and CV or portfolio link.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 727.09 Tm
+(User.js defines the MongoDB user model: name, email, hashed password, role, profile) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 712.89 Tm
+(fields, lastLogin, loginCount, isActive, and timestamps.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 694.69 Tm
+(auth.js handles POST /auth/register, POST /auth/login, GET /auth/me, user list helpers,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 680.49 Tm
+(and login statistics. It validates requests, hashes passwords with bcrypt, signs JWT) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 666.29 Tm
+(tokens, and avoids returning passwords.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 648.09 Tm
+(middleware/auth.js reads x-auth-token, verifies the JWT, stores decoded user data on) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 633.89 Tm
+(req.user, and blocks invalid or missing sessions.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 615.69 Tm
+(users.js provides profile read/update routes. The update route is protected and checks) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 601.49 Tm
+(that the logged-in user can update only their own profile.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 577.29 Tm
+(Person 2: Jobs, Applications, Email) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 558.09 Tm
+(Owned frontend files: Jobs.jsx, CreateJob.jsx, Dashboard.jsx, Jobs.css, CreateJob.css,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 543.89 Tm
+(Dashboard.css, api.js, and config.js.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 525.69 Tm
+(Owned backend files: backend/routes/jobs.js, backend/models/Job.js, and) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 511.49 Tm
+(backend/utils/mailer.js.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 493.29 Tm
+(Jobs.jsx loads all jobs, shows search and job type filters, calculates job/application) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 479.09 Tm
+(summaries, and provides the job seeker application form. Applications collect name,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 464.89 Tm
+(email, phone, CV file name or CV URL, and a detailed message.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 446.69 Tm
+(CreateJob.jsx protects job creation for employer accounts, validates title, company,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 432.49 Tm
+(location, description length, salary range, job type, experience level, and required) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 418.29 Tm
+(skills, then calls jobApi.create\(\).) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 400.09 Tm
+(Dashboard.jsx has two experiences. Employers see posted jobs, applicant cards, decision) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 385.89 Tm
+(buttons, and charts. Job seekers see applied jobs and status tracking. Both sides share) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 371.69 Tm
+(overview cards and visual charts.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 353.49 Tm
+(api.js centralizes API calls, adds Content-Type and x-auth-token headers, wraps errors,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 339.29 Tm
+(and exposes authApi, jobApi, and userApi helper methods.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 321.09 Tm
+(config.js uses /api in production and http://localhost:5001/api in development.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 302.89 Tm
+(Job.js defines job fields plus embedded applications. Each application stores applicant) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 288.69 Tm
+(userId, name, phone, email, cvName, cvUrl, message, status, and appliedAt.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 270.49 Tm
+(jobs.js supports listing jobs, reading one job, creating employer-only jobs, applying as) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 256.29 Tm
+(a job seeker, updating application status as the job owner, updating jobs, and deleting) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 242.09 Tm
+(jobs.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 223.89 Tm
+(mailer.js supports application decision emails. EMAIL_DELIVERY=console generates) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 209.69 Tm
+(messages locally. SMTP mode uses SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 195.49 Tm
+(SMTP_SECURE, and MAIL_FROM.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 171.29 Tm
+(Person 3: Admin, Layout, Deployment) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 152.09 Tm
+(Owned frontend files: Admin.jsx, Navbar.jsx, Footer.jsx, Home.jsx, App.jsx, main.jsx,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 137.89 Tm
+(Admin.css, Navbar.css, Footer.css, Home.css, global.css, App.css, and index.css.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 119.69 Tm
+(Owned backend/deployment files: backend/routes/admins.js, backend/models/Admin.js,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 105.49 Tm
+(backend/server.js, backend/scripts/createAdmin.js, backend/scripts/viewUsers.js,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 91.29 Tm
+(backend/README.md, backend/package.json, backend/.env.example, api/index.js,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 77.09 Tm
+(vercel.json, and root package.json.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Length 4879 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 50.00 791.89 Tm
+(Home.jsx now acts as the first user-facing product screen. It includes a professional) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 777.69 Tm
+(hero, images, role-aware calls to action, feature cards, and a hiring-process story) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 763.49 Tm
+(section.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 745.29 Tm
+(Footer.jsx uses the FreeLancena brand and provides platform links, employer links,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 731.09 Tm
+(contact email, Cairo location, and copyright information.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 712.89 Tm
+(App.jsx defines the main routes: /, /login, /register, /jobs, /dashboard, /profile,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 698.69 Tm
+(/admin, and /create-job. Navbar and Footer wrap the routed pages inside AuthProvider.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 680.49 Tm
+(Admin.jsx checks for a token, calls protected admin endpoints, shows user statistics,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 666.29 Tm
+(displays all registered users, and tracks admin login activity.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 648.09 Tm
+(Admin.js defines admin accounts connected to User records, with superadmin/admin roles,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 633.89 Tm
+(permissions, active/inactive status, lastAdminLogin, adminLoginCount, and timestamps.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 615.69 Tm
+(admins.js protects admin routes using JWT auth plus an isAdmin middleware. It supports) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 601.49 Tm
+(dashboard stats, user listing, creating admins, listing admins, permission updates,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 587.29 Tm
+(removing admins, and admin login tracking.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 569.09 Tm
+(server.js creates the Express app, configures CORS and JSON parsing, connects to MongoDB) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 554.89 Tm
+(with a reusable connection promise, mounts /api/auth, /api/jobs, /api/users, and) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 540.69 Tm
+(/api/admin, and exports the app for Vercel.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 522.49 Tm
+(api/index.js exports the backend Express app so Vercel can run it as a serverless) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 508.29 Tm
+(function. vercel.json routes /api/* to the API and all normal frontend routes to the) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 494.09 Tm
+(Vite index.html fallback.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 469.89 Tm
+(Database Models) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 450.69 Tm
+(User model: stores the identity and account profile. Important fields are name, email,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 436.49 Tm
+(password, role, profile.bio, profile.skills, profile.experience, profile.resume,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 422.29 Tm
+(lastLogin, loginCount, isActive, createdAt, and updatedAt.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 404.09 Tm
+(Job model: stores job posts and embedded applications. Important fields are title,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 389.89 Tm
+(description, company, location, salary, jobType, experienceLevel, skills, postedBy,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 375.69 Tm
+(applications, and timestamps.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 357.49 Tm
+(Admin model: stores admin privileges for existing users. Important fields are userId,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 343.29 Tm
+(name, email, role, permissions, status, lastAdminLogin, adminLoginCount, createdAt, and) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 329.09 Tm
+(updatedAt.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 304.89 Tm
+(Backend API Summary) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 285.69 Tm
+(Auth routes: POST /api/auth/register creates users, POST /api/auth/login verifies users,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 271.49 Tm
+(GET /api/auth/me returns current user, and stats/list helper endpoints support user) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 257.29 Tm
+(reporting.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 239.09 Tm
+(User routes: GET /api/users/:id returns a user without password, and PUT /api/users/:id) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 224.89 Tm
+(updates profile data after JWT verification and ownership check.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 206.69 Tm
+(Job routes: GET /api/jobs lists jobs, GET /api/jobs/:id returns a job, POST /api/jobs) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 192.49 Tm
+(creates employer jobs, POST /api/jobs/:id/apply creates applications, PUT) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 178.29 Tm
+(/api/jobs/:jobId/applications/:applicationId/status updates decisions, and PUT/DELETE) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 164.09 Tm
+(/api/jobs/:id manage existing jobs.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 145.89 Tm
+(Admin routes: GET /api/admin/dashboard returns counts, GET /api/admin/users returns) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 131.69 Tm
+(registered users, POST /api/admin/create creates admins, GET /api/admin/list lists) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 117.49 Tm
+(admins, PUT /api/admin/:adminId/permissions updates permissions, DELETE) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 103.29 Tm
+(/api/admin/:adminId removes admins, and POST /api/admin/login-track updates admin login) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 89.09 Tm
+(stats.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 4510 >>
+stream
+BT
+/F2 15 Tf
+1 0 0 1 50.00 791.89 Tm
+(Security and Session Handling) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 772.69 Tm
+(- Passwords are hashed with bcrypt before saving to MongoDB.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 754.49 Tm
+(- JWT tokens include user id and role and expire after 7 days.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 736.29 Tm
+(- Protected routes read x-auth-token and verify it before continuing.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 718.09 Tm
+(- Profile updates check that the route id matches the authenticated user id.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 699.89 Tm
+(- Employer-only job creation and job-owner-only application decisions are enforced in) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 685.69 Tm
+(backend routes.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 667.49 Tm
+(- Admin routes require both a valid token and an active Admin record.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 649.29 Tm
+(- Production must provide a strong JWT_SECRET and MongoDB connection string through) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 635.09 Tm
+(environment variables.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 610.89 Tm
+(Deployment and Environment) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 591.69 Tm
+(Root package.json defines build and vercel-build scripts that install frontend) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 577.49 Tm
+(dependencies and build the Vite app.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 559.29 Tm
+(vercel.json defines two builds: api/index.js with @vercel/node and frontend/package.json) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 545.09 Tm
+(with @vercel/static-build. It routes /api/* to the backend and frontend routes to) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 530.89 Tm
+(index.html.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 512.69 Tm
+(backend/server.js uses MONGODB_URI or local mongodb://localhost:27017/jobportal. It only) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 498.49 Tm
+(loads backend/.env locally, while Vercel uses configured environment variables.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 480.29 Tm
+(Important environment variables include MONGODB_URI, JWT_SECRET, EMAIL_DELIVERY,) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 466.09 Tm
+(SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_SECURE, and MAIL_FROM.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 441.89 Tm
+(Presentation Order) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 422.69 Tm
+(1. Person 3 starts with the project intro, home page, app routing, layout, backend) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 408.49 Tm
+(server setup, MongoDB connection, and Vercel deployment.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 390.29 Tm
+(2. Person 1 explains register/login, JWT authentication, sessions, User model,) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 376.09 Tm
+(profile page, and profile updates.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 357.89 Tm
+(3. Person 2 explains browsing jobs, creating jobs, applying, dashboards,) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 343.69 Tm
+(accept/reject decisions, Job model, and email notifications.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 325.49 Tm
+(4. Person 3 finishes with the admin panel, super admin permissions, environment) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 311.29 Tm
+(variables, documentation, and final summary.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 287.09 Tm
+(Demo Accounts and Testing Notes) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 267.89 Tm
+(The frontend supports demo login credentials inside AuthContext.jsx: seeker@test.com /) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 253.69 Tm
+(123456, employer@test.com / 123456, and admin@test.com / 123456.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 235.49 Tm
+(For real backend testing, MongoDB must be running or MONGODB_URI must point to a valid) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 221.29 Tm
+(cloud database. For email testing, EMAIL_DELIVERY=console is easiest because it prints) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 207.09 Tm
+(generated emails in the backend terminal.) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 188.89 Tm
+(Recommended smoke test: register a job seeker, register an employer, create a job as) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 174.69 Tm
+(employer, apply as job seeker, return to employer dashboard, accept/reject the) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 160.49 Tm
+(application, and confirm the status changes on the job seeker dashboard.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 136.29 Tm
+(Known Follow-up Check) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 117.09 Tm
+(One integration point to review during final testing: Profile.jsx calls) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 102.89 Tm
+(userApi.getProfile\(user.id\), while api.js currently defines getProfile without a userId) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 88.69 Tm
+(parameter and calls /users/profile. The backend route is GET /users/:id. The intended) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 74.49 Tm
+(behavior is for profile loading to request /users/{userId}. Updating api.js to accept) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Length 774 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 50.00 791.89 Tm
+(the userId would align frontend and backend profile loading.) Tj
+/F2 15 Tf
+1 0 0 1 50.00 767.69 Tm
+(Conclusion) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 748.49 Tm
+(The updated project now has a complete presentation story: Person 3 introduces the) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 734.29 Tm
+(product, layout, routing, server, deployment, and admin system; Person 1 explains) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 720.09 Tm
+(authentication, JWT sessions, users, and profile management; Person 2 explains the job) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 705.89 Tm
+(marketplace, applications, dashboards, and email decisions. Together these features form) Tj
+/F1 10.5 Tf
+1 0 0 1 50.00 691.69 Tm
+(a functional freelance hiring platform ready for demo and deployment.) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 4 0 R >>
+endobj
+10 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+11 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 6 0 R >>
+endobj
+12 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+13 0 obj
+<< /Type /Pages /Kids [8 0 R 9 0 R 10 0 R 11 0 R 12 0 R] /Count 5 >>
+endobj
+14 0 obj
+<< /Type /Catalog /Pages 13 0 R >>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000154 00000 n 
+0000004716 00000 n 
+0000009684 00000 n 
+0000014614 00000 n 
+0000019175 00000 n 
+0000019999 00000 n 
+0000020142 00000 n 
+0000020285 00000 n 
+0000020429 00000 n 
+0000020573 00000 n 
+0000020717 00000 n 
+0000020802 00000 n 
+trailer
+<< /Size 15 /Root 14 0 R >>
+startxref
+20853
+%%EOF
